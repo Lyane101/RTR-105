@@ -54,3 +54,31 @@
    54  echo $PATH
    55  git-
    56  history > history_20220920.txt
+   57  cat history
+   58  cat history_20220920.txt
+   59  ls -lta ~/ | grep hist
+   60  ls -lt
+   61  git-upload
+   62  nano git-upload
+   63  git-upload
+   64  nano special_variable_test.sh
+   65  cat special_variable_test.sh 
+   66  ls -lt
+   67  chmod 764 special_variable_test.sh 
+   68  ls -lt
+   69  special_variable_test.sh 
+   70  special_variable_test.sh Hello World
+   71  special_variable_test.sh Hello World !
+   72  special_variable_test.sh Hello "World !"
+   73  special_variable_test.sh "Hello World !"
+   74  special_variable_test.sh Hello World !
+   75  nano special_variable_test.sh 
+   76  cat special_variable_test.sh 
+   77  special_variable_test.sh Hello World !
+   78  nano special_variable_test.sh 
+   79  cat special_variable_test.sh 
+   80  special_variable_test.sh Hello World !
+   81  special_variable_test.sh arg1 arg2
+   82  nano git-upload
+   83  git-upload 05
+   84  history > history_20220920.txt
