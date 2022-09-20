@@ -21,3 +21,36 @@
    21  ls -lt
    22  history
    23  history > history_20220920.txt
+   24  ls -lt
+   25  cat history_20220920.txt
+   26  nano git-upload
+   27  ls -lt
+   28  cat git-upload
+   29  git
+   30  git-upload
+   31  /home/user/RTR-105/git-upload
+   32  ls -lt git-upload
+   33  chmod 764 git-upload
+   34  ls -lt git-upload
+   35  ./git-upload
+   36  nano git-upload
+   37  ./git-upload
+   38  whereis nano
+   39  ls /bin/nano -l
+   40  firefox &
+   41  pwd
+   42  rm -rf RTR-105
+   43  ls -lt
+   44  history
+   45  history | grep clone
+   46  git clone https://github.com/Lyane101/RTR-105
+   47  ls -lt
+   48  cd RTR-105
+   49  ls -lt
+   50  echo $PATH
+   51  PATH=$PATH
+   52  echo $PATH
+   53  PATH=$PATH:./
+   54  echo $PATH
+   55  git-
+   56  history > history_20220920.txt
