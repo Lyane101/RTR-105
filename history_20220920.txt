@@ -1,0 +1,23 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  whereis ls
+    5  pwd
+    6  ls -lt /bin/ls
+    7  cd /bin
+    8  ls
+    9  ls -l
+   10  echo $0
+   11  ls -l ls
+   12  cat ls
+   13  cd
+   14  ls
+   15  /bin/ls
+   16  echo $PATH
+   17  git clone https://github.com/Lyane101/RTR-105
+   18  ls
+   19  ls -lt
+   20  cd RTR-105
+   21  ls -lt
+   22  history
+   23  history > history_20220920.txt
