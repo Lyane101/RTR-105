@@ -1,0 +1,64 @@
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  pwd
+    4  git clone https://github.com/Lyane101/RTR-105
+    5  ls -lt
+    6  whereis ls
+    7  ls -l /bin/ls
+    8  echo $PATH
+    9  ls
+   10  cd RTR-105
+   11  ls -lt
+   12  mkdir Class_06
+   13  cd Class_06/
+   14  nano first.c
+   15  cat first.c 
+   16  gcc first.c
+   17  gcc --help
+   18  ls -lc
+   19  echo $PATH
+   20  /home/user/RTR-105/Class_06/a.out 
+   21  ./a.out 
+   22  cd ..
+   23  tree
+   24  cd Class_06/
+   25  ls -lt
+   26  nano first.c 
+   27  gcc first.c 
+   28  ls -lt
+   29  ./a.out 
+   30  echo $?
+   31  nano first.c
+   32  gcc first.c 
+   33  ./a.out 
+   34  echo $?
+   35  nano first.c
+   36  gcc first.c 
+   37  ./a.out 
+   38  echo $?
+   39  gcc first.c -o first.out
+   40  ls -lt
+   41  cd ..
+   42  tree
+   43  pwd
+   44  ls -lta
+   45  nano .gitignore
+   46  ls -lta
+   47  cd Class_06/
+   48  ls -lt
+   49  gcc first.c
+   50  gcc first.c -S -o first.out
+   51  ls -lt
+   52  gcc first.c -S -save-temps -o first.out
+   53  ls -lt
+   54  cat first.c
+   55  cat first.i
+   56  gcc first.c -save-temps -o first.out
+   57  ls -lt
+   58  cat first.i
+   59  cat first.s
+   60  cat first.o
+   61  hexdump -C first.c
+   62  cd ..
+   63  ./git-upload 06
+   64  history > history_20220927.txt
