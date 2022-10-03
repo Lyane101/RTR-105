@@ -38,6 +38,8 @@ Datormācība (pamatkurss) elektroniskā klade
    - ```rmdir dirname``` - dzēst direktoriju
    - ```rm filename``` - dzēst failu
    - ```rm -rf name``` - dzēst failus un direktorijus rekursīvi, bez apstiprināšanas
+   - ```hexdump -C filename``` - parādīt datus heksadecimālā formātā
+   - ```gcc filename.c -o filename.out``` - kompilēt C programmu ar norādīto objekta faila nosaukumu
 2. Paņēmieni
    - <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>T</kbd> - atvērt termināli
    - <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> - atvērt jaunu cilni terminālī
