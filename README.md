@@ -51,4 +51,61 @@ Datormācība (pamatkurss) elektroniskā klade
    - <kbd>Ctrl</kbd>+<kbd>Z</kbd> - pauzēt jebkuras komandas darbību
    - <kbd>Ctrl</kbd>+<kbd>A</kbd> - pārvietot kursoru uz līnijas sākumu
    - <kbd>Ctrl</kbd>+<kbd>E</kbd> - pārvietot kursoru uz līnijas beigām
+   - <kbd>Alt</kbd>+<kbd>U</kbd> - atsaukt pēdējo izpildīto darbību
+   - <kbd>Alt</kbd>+<kbd>E</kbd> - atsaukt iepriekš atsaukto darbību
    - ```--help``` - parādīt pieejamo komandas atslēgu sarakstu
+
+## C programmēšanas valoda
+
+1. Funkcijas:
+
+   - ```printf("Characters: %c %c \n", 'a', 65);``` - datu attēlošanas piemērs
+   - ```scanf("%d", &n);``` - datu ievadīšanas piemērs
+
+2. Formāta specifikatori:
+
+   - ```d or i``` - Signed decimal integer
+   - ```o``` - Unsigned octal
+   - ```x``` - Unsigned hexadecimal integer
+   - ```f``` - Decimal floating point, lowercase
+   - ```e``` - Scientific notation (mantissa/exponent), lowercase
+   - ```c``` - Character
+   - ```s``` - String of characters
+
+   Datu tipa garuma modifikatori:
+
+   - ```hh``` - signed char
+   - ```h``` - short int
+   - ```l``` - long int
+   - ```ll``` - long long int
+
+3. Piemēri:
+
+```
+#include <stdio.h>
+
+int main()
+{
+   printf ("Characters: %c %c \n", 'a', 65);
+   printf ("Decimals: %d %ld\n", 1977, 650000L);
+   printf ("Preceding with blanks: %10d \n", 1977);
+   printf ("Preceding with zeros: %010d \n", 1977);
+   printf ("Some different radices: %d %x %o %#x %#o \n", 100, 100, 100, 100, 100);
+   printf ("floats: %4.2f %+.0e %E \n", 3.1416, 3.1416, 3.1416);
+   printf ("Width trick: %*d \n", 5, 10);
+   printf ("%s \n", "A string");
+   return 0;
+}
+```
+```
+Output:
+
+Characters: a A
+Decimals: 1977 650000
+Preceding with blanks:       1977
+Preceding with zeros: 0000001977
+Some different radices: 100 64 144 0x64 0144
+floats: 3.14 +3e+000 3.141600E+000
+Width trick:    10
+A string
+```
