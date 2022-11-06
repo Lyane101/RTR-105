@@ -2,8 +2,8 @@
 
 int main()
 {
-  char c1, c2, c3;
-  short int n;
+  char c1, c2, c3, n;
+ // short int n;
 
   printf("Luudzu ievadiet 1. burtu: ");
   scanf("%c", &c1);
@@ -13,7 +13,7 @@ int main()
   scanf(" %c", &c3);
   printf("Luudzu izveelieties burtu kaartoshanas seciibu.\n");
   printf("1. A -> Z\n2. Z -> A\n");
-  scanf("%hd", &n);
+  scanf("%hhd", &n);
 
   printf("Rezultaats:\n");
 
