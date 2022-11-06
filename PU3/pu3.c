@@ -3,7 +3,6 @@
 int main()
 {
   char c1, c2, c3, n;
- // short int n;
 
   printf("Luudzu ievadiet 1. burtu: ");
   scanf("%c", &c1);
