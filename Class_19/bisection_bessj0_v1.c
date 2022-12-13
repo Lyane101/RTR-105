@@ -1,12 +1,23 @@
 #include <stdio.h>
 #include <math.h>
 
+float mod_j0(float, float);
+
 int main() {
-  float a = 0.01, b = 1.5*M_PI, x, delta_x = 1.e-3, funkca, funkcb, funkcx;
+  float a, b, c, x, delta_x = 1.e-3, funkca, funkcb, funkcx;
   int k = 0;
 
-  funkca = j0(a);
-  funkcb = j0(b);
+  printf("Lūdzu ievadiet a vērtību:");
+  scanf("%f",&a);
+  printf("Lūdzu ievadiet b vērtību:");
+  scanf("%f",&b);
+  printf("Lūdzu ievadiet c vērtību:");
+  scanf("%f",&c);
+  printf("Lūdzu ievadiet delta_x vērtību:");
+  scanf("%f",&delta_x);
+
+  funkca = mod_j0(a,c);
+  funkcb = mod_j0(b,c);
 
   if (funkca*funkcb > 0) {
     printf("Intervālā [%.2f;%.2f] bessj0(x) funkcijai ",a,b);
@@ -14,22 +25,27 @@ int main() {
     return 1;
   }
 
-  printf("               bessj0(%7.3f)=%7.3f\t\t\t\t",a,j0(a));
-  printf("bessj0(%7.3f)=%7.3f\n",b,j0(b));
+  printf("               bessj0(%7.3f)=%7.3f\t\t\t\t",a,mod_j0(a,c));
+  printf("bessj0(%7.3f)=%7.3f\n",b,mod_j0(b,c));
 
   while((b-a)>delta_x) {
     k++;
     x = (a+b)/2.;
-    if (funkca*j0(x)>0)
+    if (funkca*mod_j0(x,c)>0)
       a = x;
     else
       b = x;
-    printf("%2d. iterācija: bessj0(%7.3f)=%7.3f\t",k,a,j0(a));
-    printf("bessj0(%7.3f)=%7.3f\t",x,j0(x));
-    printf("bessj0(%7.3f)=%7.3f\n",b,j0(b));
+    printf("%2d. iterācija: bessj0(%7.3f)=%7.3f\t",k,a,mod_j0(a,c));
+    printf("bessj0(%7.3f)=%7.3f\t",x,mod_j0(x,c));
+    printf("bessj0(%7.3f)=%7.3f\n",b,mod_j0(b,c));
   }
 
-  printf("Sakne atrodas pie x=%.3f, jo bessj0(x) ir %.3f\n",x,j0(x));
+  printf("Sakne atrodas pie x=%.3f, jo bessj0(x) ir %.3f\n",x,mod_j0(x,c));
 
   return 0;
 }
+
+float mod_j0(float x, float A) {
+  return j0(x)-A;
+}
+
