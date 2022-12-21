@@ -2,44 +2,20 @@
 
 int main()
 {
-  unsigned char n, c, res;
+  unsigned char n, c, i, res;
 
-  printf("Luudzu ievadiet vienu naturaalu skaitli: ");
+  printf("Lūdzu ievadiet vienu naturālu skaitli: ");
   scanf("%hhu", &n);
 
-  printf("Atbilstoshais binaarais kods:\n");
+  printf("Atbilstošais binārais kods:\n");
 
-  c = 128;
-  res = (n & c) >> 7;
-  printf("%d", res);
+  for (c = 128, i = 7; c >= 1; c /= 2, i--)
+  {
+    res = (n & c) >> i;
+    printf("%d", res);
+  }
 
-  c = 64;
-  res = (n & c) >> 6;
-  printf("%d", res);
-
-  c = 32;
-  res = (n & c) >> 5;
-  printf("%d", res);
-
-  c = 16;
-  res = (n & c) >> 4;
-  printf("%d", res);
-
-  c = 8;
-  res = (n & c) >> 3;
-  printf("%d", res);
-
-  c = 4;
-  res = (n & c) >> 2;
-  printf("%d", res);
-
-  c = 2;
-  res = (n & c) >> 1;
-  printf("%d", res);
-
-  c = 1;
-  res = (n & c) >> 0;
-  printf("%d\n", res);
+  printf("\n");
 
   return 0;
 }
